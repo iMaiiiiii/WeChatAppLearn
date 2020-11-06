@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#219bf3",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "一只小老虎?",
+    "backgroundColor": "#f0f",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#219bf3",
+    "color": "#444",
+    "backgroundColor": "#F6f611",
+    "borderStyle": "white",
+    "position": "bottom", 
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "Index",
+      "iconPath": "asserts/icon_boy_nor.png",
+      "selectedIconPath": "asserts/icon_boy_dis.png"
+    },
+    {
+      "pagePath": "pages/logs/logs",
+      "text": "Logs",
+      "iconPath": "asserts/icon_girl_nor.png",
+      "selectedIconPath": "asserts/icon_girl_dis.png"
+    }]
+  },
+  "debug": true
+}
