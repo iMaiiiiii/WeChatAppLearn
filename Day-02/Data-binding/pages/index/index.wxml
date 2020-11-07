@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<view class="container">
+  <text>{{ message }}</text>
+  <text>{{ person.name }}</text>
+
+  <view class="World {{ viewClassName }}"></view>
+
+  <text>{{ 'Hello! '}}</text>
+  <text>{{ 123 }}</text>
+  <text>{{ 1 + 9 }} </text>
+  <text>{{ 100 > 50 ? '你对了' : '你错了'}}</text>
+
+  <checkbox checked="{{ true }}"></checkbox>
+
+  //
+  <view>
+    <!-- <view>
+      <checkbox></checkbox>
+      <text>JavaScript</text>
+    </view>
+    <view>
+      <checkbox checked="{{ true }}"></checkbox>
+      <text>HTML</text>
+    </view>
+    <view>
+      <checkbox></checkbox>
+      <text>CSS</text>
+    </view> -->
+    <view wx:for="{{ todos }}" wx:for-item="abc" wx:for-index="i">
+      <checkbox checked="{{ abc.complete  }}"></checkbox>
+      <text>{{ i }}.</text>
+      <text>{{ abc.name }}-</text>
+      <text>{{ item }}</text>
+      <!-- 如果全局中有item关键属性,使用wx:for-item给当前遍历的数据起名字 -->
+    </view>
+
+    <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="i">
+      <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="j">
+        <!-- wx:if根据bool值进行显示或者隐藏 -->
+        <view wx:if="{{i <= j}}">
+          {{i}} * {{j}} = {{i * j}}
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+</view>

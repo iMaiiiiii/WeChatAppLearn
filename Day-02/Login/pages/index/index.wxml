@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="header">
+    <image src="../../assets/logo.png" mode="aspectFit"/>
+  </view>
+  <view class="inputs">
+    <input class="username" placeholder="请输入用户名" value="{{ username  }}" bindinput="inputHandle" data-prop="username"/>
+    <input class="password" type="password" placeholder="请输入密码" value="{{ password }}" bindinput="inputHandle" data-prop="password"/>
+  </view>
+  <view class="buttons">
+    <button type="primary" bindtap="loginHandle">登录</button>
+    <button type="default" bindtap="registerHandle">注册</button>
+  </view>
+</view> -->
+
+<!-- version 3 表单方式提交 -->
+<form bindsubmit="pageHandle">
+  <view class="container">
+    <view class="header">
+      <image src="../../assets/logo.png" mode="aspectFit" />
+    </view>
+    <view class="inputs">
+      <input class="username" name="username" placeholder="请输入用户名" value="{{ username  }}" data-prop="username" />
+      <input class="password" name="password" type="password" placeholder="请输入密码" value="{{ password }}"
+        data-prop="password" />
+    </view>
+    <view class="buttons">
+      <button type="primary" form-type="submit">登录</button>
+      <button type="default">注册</button>
+    </view>
+  </view>
+</form>

@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 在html中是onclick -->
+  <!-- 通过'bind+事件名'给组件添加一个属性,属性的指向是当前页面对象中JS方法 -->
+  <!-- 通过'catch+事件名'给组件添加一个属性,属性的指向是当前页面对象中JS方法,但是阻止了冒泡 -->
+  <button bindtap="buttonTapHandle">点我</button>
+  <text bindtap="buttonTapHandle"> 你好呀! </text>
+
+  <!-- 事件冒泡 -->
+  <view style="width:200px;height:200px;background-color:red" bindtap="outterHandle">
+    <view style="width:100px;height:100px;background-color:blue" catchtap="innerHandle">
+    </view>
+  </view>
+
+  <button bindtap="tap2Handle" data-name="zhangsan">点我</button>
+  <!-- 打印显示为helloWorld: "zhangsan"  自动去除符号,并且以驼峰法命名-->
+  <button bindtap="tap2Handle" data-hello-world="zhangsan">点我</button>
+
+  <!-- 事件的基本使用:
+        1. tap+ catch+
+        2. 冒泡事件,用catch
+        3. 事件处理函数,只能通过dataset处理 -->
+</view> 

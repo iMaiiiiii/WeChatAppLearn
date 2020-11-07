@@ -1,5 +1,5 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/logs/logs"
   ],
@@ -16,19 +16,22 @@
     "color": "#444",
     "backgroundColor": "#F6f611",
     "borderStyle": "white",
-    "position": "bottom", 
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "Index",
-      "iconPath": "asserts/icon_boy_nor.png",
-      "selectedIconPath": "asserts/icon_boy_dis.png"
-    },
-    {
-      "pagePath": "pages/logs/logs",
-      "text": "Logs",
-      "iconPath": "asserts/icon_girl_nor.png",
-      "selectedIconPath": "asserts/icon_girl_dis.png"
-    }]
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Index",
+        "iconPath": "asserts/icon_boy_nor.png",
+        "selectedIconPath": "asserts/icon_boy_dis.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "Logs",
+        "iconPath": "asserts/icon_girl_nor.png",
+        "selectedIconPath": "asserts/icon_girl_dis.png"
+      }
+    ]
   },
-  "debug": true
+  "debug": true,
+  "sitemapLocation": "sitemap42.json"
 }
