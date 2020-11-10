@@ -1,0 +1,128 @@
+page {
+  height: 100%;
+}
+
+.root {
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+  background-color: #F0F0F0;
+}
+
+.tabs {
+  /* height: 50px; */
+  display: flex;
+  background-color: pink;
+}
+
+.tabs .item {
+  flex: 1;
+  text-align: center;
+  font-size: 16px;
+  background-color: #222;
+  color: #ccc;
+  padding: 12px;
+}
+
+.tabs .item.active {
+  color: #fff;
+  border-bottom: 2px solid red;
+}
+
+
+.content {
+  flex: 1;
+  background-color: #060E10;
+  overflow: hidden;
+}
+
+.content .slide {
+  width: 100%;
+  height: 150px;
+}
+
+.content .slide image{
+  width: 100%;
+  height: 150px;
+}
+
+.portals {
+  display: flex;
+}
+
+.portals .item {
+  flex: 1;
+}
+
+.portals .item image {
+  width: 60px;
+  height: 60px;
+  /* display: block; */
+  margin: 10px auto;
+}
+
+.portals .item text {
+  /* display: block; */
+  font-size: 12px;
+  text-align: center;
+  color: #ccc;
+}
+
+.list .title {
+  color: #ccc;
+  font-size: 14px;
+  margin: 10px 10px;
+}
+
+.list .inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list .inner .item {
+  width: 33.33333333%;
+}
+
+.list .inner .item image {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.list .inner .item text {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.player {
+  display: flex;
+  height: 50px;
+  background-color: #181418;
+}
+
+.player .poster image {
+  width: 40px;
+  height: 40px; 
+  margin: 5px;
+}
+
+.player .info {
+  flex: 1;
+  color: #888;
+  font-size: 14px;
+  margin: 5px;
+}
+
+.player .info .title{
+  display: block;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.player .controls image {
+  width: 40px;
+  height: 40px;
+  margin: 5px 2px;
+}
+

@@ -1,0 +1,67 @@
+
+<!-- version 1 -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex demo 2</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 300px;
+            border: 1px solid #000;
+            font-size: 0px;
+            /* display: flex; */
+        }
+        .item {
+            display: inline-block;
+            width: 25%;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" style="background-color: blue;"></div>
+        <div class="item" style="background-color: aqua;"></div>
+        <div class="item" style="background-color: blueviolet;"></div>
+        <div class="item" style="background-color: yellow;"></div>
+</body>
+</html> -->
+
+
+<!-- version 2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex demo 2</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 300px;
+            border: 1px solid #000;
+            display: flex;
+            flex-direction: column;
+        }
+        .item {
+            /* width: 25%; */
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" style="background-color: blue; height: 100px; flex: inherit;"></div>
+        <div class="item" style="background-color: aqua;"></div>
+        <div class="item" style="background-color: blueviolet;"></div>
+        <div class="item" style="background-color: yellow;"></div>
+        <div class="item" style="background-color: blue;"></div>
+        <div class="item" style="background-color: aqua;"></div>
+        <div class="item" style="background-color: blueviolet;"></div>
+        <div class="item" style="background-color: yellow;"></div>
+</body>
+</html>

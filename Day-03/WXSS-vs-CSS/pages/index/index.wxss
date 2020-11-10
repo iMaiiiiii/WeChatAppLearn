@@ -1,0 +1,6 @@
+/**index.wxss**/
+.demo {
+  width: 750rpx;
+  height: 300rpx;
+  background-color: cyan;
+}
