@@ -1,0 +1,17 @@
+<!--pages/demo1/demo1.wxml-->
+<navigator url="../demo2/demo2"> go demo2 page </navigator>
+
+<navigator url="../demo2/demo2?name=xiaoming&age=8">小明</navigator>
+
+<navigator url="../demo2/demo2?name={{ name }}">小红</navigator>
+
+<navigator url="../demo2/demo2?name={{ name }}" redirect>跳转了,但是我打算再回来了!</navigator>
+
+<navigator hover-class="myHover">click me!</navigator>
+<navigator hover-class="none">click me!</navigator>
+
+<!-- cursor: pointer 可以让任何元素点击时高亮 -->
+<image class="hover-demo" src="../../images/logo.png"></image>
+
+
+<button type="primary" bindtap="buttonHandle"> 跳转到Demo2 </button>

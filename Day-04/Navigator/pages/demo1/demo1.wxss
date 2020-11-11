@@ -1,0 +1,9 @@
+/* pages/demo1/demo1.wxss */
+
+.myHover {
+  color: pink;
+}
+
+.hover-demo {
+  cursor: pointer;
+}
